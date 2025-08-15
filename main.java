@@ -47,7 +47,7 @@ public class main {
         while(cycle){
             System.out.println("Select an option:\n 1.-Register alumn \n 2.-Print students with their qualifications \n 3.-Exit");
             int option = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine();
 
             switch(option){
                 case 1:
@@ -61,7 +61,7 @@ public class main {
                     double p2 = sc.nextDouble();
                     System.out.print("Enter grade for P3: ");
                     double p3 = sc.nextDouble();
-                    sc.nextLine(); // consume newline
+                    sc.nextLine();
                     Alumno alumno = new Alumno(name, enrolled, p1, p2, p3);
                     alumnos.add(alumno);
                     System.out.println("Alumno registered!\n");
