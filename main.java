@@ -49,6 +49,7 @@ public class main {
             int option = sc.nextInt();
             sc.nextLine();
 
+            Double Final;
             switch(option){
                 case 1:
                     // Register a new student
@@ -65,7 +66,8 @@ public class main {
                     sc.nextLine();
                     Alumno alumno = new Alumno(name, enrolled, p1, p2, p3);
                     alumnos.add(alumno);
-                    System.out.println("Alumno registered!\n");
+
+                    System.out.println("The alumn has registered!\n");
                     break;
                 case 2:
                     if(alumnos.isEmpty()){
@@ -73,7 +75,8 @@ public class main {
                     } else {
                         for(Alumno a : alumnos){
                             System.out.println("Name: " + a.getName() + ", Enrollment: " + a.getenrolled() +
-                                ", P1: " + a.getp1() + ", P2: " + a.getp2() + ", P3: " + a.getp3());
+                                ", P1: " + a.getp1() + ", P2: " + a.getp2() + ", P3: " + a.getp3() +
+                                ", Final Grade: " + ((a.getp1()*0.25) + (a.getp2()*0.25) + (a.getp3()*0.5)));
                         }
                         System.out.println();
                     }
