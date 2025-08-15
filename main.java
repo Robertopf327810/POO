@@ -51,6 +51,6 @@ public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Que quieres hacer:\n 1.-");
+        System.out.println("Select an option:\n 1.-Register alumn \n 2.-print student with their qualifications");
     }
 }
