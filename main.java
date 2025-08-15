@@ -50,7 +50,18 @@ class Alumno {
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        boolean cycle = true;
 
-        System.out.println("Select an option:\n 1.-Register alumn \n 2.-print student with their qualifications");
+        while(cycle){
+
+            System.out.println("Select an option:\n 1.-Register alumn \n 2.-print student with their qualifications");
+            int option = sc.nextInt();
+
+            switch(option){
+                case 1:
+                Scanner scan = new Scanner(System.in);  
+            }
+        }
+        
     }
 }
