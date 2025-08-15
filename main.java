@@ -51,6 +51,7 @@ public class main {
 
             switch(option){
                 case 1:
+                    // Register a new student
                     System.out.print("Enter name: ");
                     String name = sc.nextLine();
                     System.out.print("Enter enrollment number: ");
