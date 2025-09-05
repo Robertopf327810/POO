@@ -36,6 +36,9 @@ class Process {
         this.n2 = n2;
     }
     
+    public double getResult() {
+        return result;
+    }
 
 }
 public class Calculadora {
